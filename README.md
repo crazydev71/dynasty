@@ -1,11 +1,11 @@
 
-## Dynasty
+# Dynasty
 AWS dynamodb SDK wrapper with coffee script
-- To Get Started.
-    #npm install
-    #grunt publish
+## To Get Started.
+    - npm install
+    - grunt publish
 
-- Grunt Tasks.
-    #grunt publish
-    #grunt test
-    #grunt [default]
+## Grunt Tasks.
+    - grunt publish
+    - grunt test
+    - grunt [default]
