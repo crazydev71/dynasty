@@ -1,0 +1,120 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.10.5
+3 info using node@v4.4.7
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   escapedName: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/home/srn/development/dynasty/dynasty',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /home/srn/.npm/dynasty/0.2.5/package.tgz not in flight; packing
+9 verbose correctMkdir /home/srn/.npm correctMkdir not in flight; initializing
+10 info lifecycle dynasty@0.2.5~prepublish: dynasty@0.2.5
+11 verbose lifecycle dynasty@0.2.5~prepublish: unsafe-perm in lifecycle true
+12 verbose lifecycle dynasty@0.2.5~prepublish: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/home/srn/development/dynasty/dynasty/node_modules/.bin:/usr/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games
+13 verbose lifecycle dynasty@0.2.5~prepublish: CWD: /home/srn/development/dynasty/dynasty
+14 silly lifecycle dynasty@0.2.5~prepublish: Args: [ '-c', 'grunt coffee' ]
+15 silly lifecycle dynasty@0.2.5~prepublish: Returned: code: 0  signal: null
+16 verbose tar pack [ '/home/srn/.npm/dynasty/0.2.5/package.tgz',
+16 verbose tar pack   '/home/srn/development/dynasty/dynasty' ]
+17 verbose tarball /home/srn/.npm/dynasty/0.2.5/package.tgz
+18 verbose folder /home/srn/development/dynasty/dynasty
+19 verbose addLocalTarball adding from inside cache /home/srn/.npm/dynasty/0.2.5/package.tgz
+20 verbose correctMkdir /home/srn/.npm correctMkdir not in flight; initializing
+21 silly cache afterAdd dynasty@0.2.5
+22 verbose afterAdd /home/srn/.npm/dynasty/0.2.5/package/package.json not in flight; writing
+23 verbose correctMkdir /home/srn/.npm correctMkdir not in flight; initializing
+24 verbose afterAdd /home/srn/.npm/dynasty/0.2.5/package/package.json written
+25 silly publish { name: 'dynasty',
+25 silly publish   version: '0.2.5',
+25 silly publish   description: 'Dynasty - Promise-based DynamoDB API',
+25 silly publish   homepage: 'http://dynastyjs.com',
+25 silly publish   author: { name: 'Victor Quinn', email: 'mail@victorquinn.com' },
+25 silly publish   contributors:
+25 silly publish    [ { name: 'Mike Atkins', url: 'https://github.com/apechimp' },
+25 silly publish      { name: 'Ben McIlwain', url: 'https://github.com/cydeweys' },
+25 silly publish      { name: 'Tim Huff', url: 'https://github.com/timhuff' } ],
+25 silly publish   bugs: { url: 'https://github.com/victorquinn/dynasty/issues' },
+25 silly publish   repository:
+25 silly publish    { type: 'git',
+25 silly publish      url: 'git+https://github.com/victorquinn/dynasty.git' },
+25 silly publish   licenses: [ { type: 'MIT', url: 'http://dynastyjs.com/license/' } ],
+25 silly publish   files: [ 'lib', 'test' ],
+25 silly publish   devDependencies:
+25 silly publish    { chance: '^0.8.0',
+25 silly publish      chai: '1.5',
+25 silly publish      grunt: '*',
+25 silly publish      'grunt-cli': '*',
+25 silly publish      'grunt-coffeelint': '*',
+25 silly publish      'grunt-contrib-coffee': '^0.12.0',
+25 silly publish      'grunt-contrib-watch': '*',
+25 silly publish      'grunt-simple-mocha': '*',
+25 silly publish      'grunt-shell': '~0.4.0',
+25 silly publish      mocha: '*',
+25 silly publish      requirejs: '2.1.6',
+25 silly publish      sinon: '1.7.3',
+25 silly publish      'chai-as-promised': '~3.3.1',
+25 silly publish      docco: '~0.6.2',
+25 silly publish      'coffee-script': '^1.6.3',
+25 silly publish      diff: '^1.0.8' },
+25 silly publish   scripts:
+25 silly publish    { build: 'grunt coffee',
+25 silly publish      prepublish: 'grunt coffee',
+25 silly publish      postpublish: 'rm -rf lib',
+25 silly publish      test: 'grunt test' },
+25 silly publish   directories: { lib: 'src/lib' },
+25 silly publish   main: 'lib/dynasty.js',
+25 silly publish   keywords: [ 'dynamodb', 'aws', 'amazon', 'promise', 'dynasty', 'database' ],
+25 silly publish   dependencies:
+25 silly publish    { 'aws-sdk': '^2.1.0',
+25 silly publish      bluebird: '^2.3.11',
+25 silly publish      debug: '^2.1.0',
+25 silly publish      lodash: '^3.10.1',
+25 silly publish      'require-directory': '^2.0.0' },
+25 silly publish   readme: '<a href="http://promisesaplus.com/">\n    <img src="http://promisesaplus.com/assets/logo-small.png" alt="Promises/A+ logo"\n         title="Promises/A+ 1.0 compliant" align="right" />\n</a>\n\n## Dynasty\n\n[![Dynasty](http://dynastyjs.com/logobg.png)](http://dynastyjs.com)\n\n[![Build Status](https://travis-ci.org/victorquinn/dynasty.png?branch=master)](https://travis-ci.org/victorquinn/dynasty)\n\nMuch more detailed documentation on the website: [http://dynastyjs.com](http://dynastyjs.com)\n\nDynasty - Promise-based DynamoDB client with a focus on simplicity\n\n## Author\n### Victor Quinn\n[http://victorquinn.com](http://victorquinn.com)\n\n[![endorse](http://api.coderwall.com/victorquinn/endorsecount.png)](http://coderwall.com/victorquinn)\n\nPlease feel free to reach out to me if you have any questions or suggestions.\n\n### Contributors\n\nTHANK YOU!\n\n```\n project  : dynasty\n repo age : 2 years, 3 months\n active   : 50 days\n commits  : 183\n files    : 15\n authors  :\n    96\tVictor Quinn       52.5%\n    37\tMike Atkins        20.2%\n    23\tTim Huff           12.6%\n     5\tdanieljoppi        2.7%\n     5\tahassani           2.7%\n     3\tAmir Hassani       1.6%\n     2\twilliamcoates      1.1%\n     2\tAlex               1.1%\n     2\tBen McIlwain       1.1%\n     2\tPatrick Brandt     1.1%\n     2\trowan              1.1%\n     1\tChristie Williams  0.5%\n     1\tAdam Savitzky      0.5%\n     1\tAaron Mead         0.5%\n     1\tLiam Ma            0.5%\n```\n\nThis project is licensed under the [MIT License](http://en.wikipedia.org/wiki/MIT_License) so feel free to hack away :)\n',
+25 silly publish   readmeFilename: 'README.md',
+25 silly publish   gitHead: '86badb6c7b7d46e90c123aa9d321c8c761d0e51c',
+25 silly publish   _id: 'dynasty@0.2.5',
+25 silly publish   _shasum: '204ce843e3d840d17ec9a70a8defbc21a61fd827',
+25 silly publish   _from: '.' }
+26 verbose getPublishConfig undefined
+27 silly mapToRegistry name dynasty
+28 silly mapToRegistry using default registry
+29 silly mapToRegistry registry https://registry.npmjs.org/
+30 silly mapToRegistry data Result {
+30 silly mapToRegistry   raw: 'dynasty',
+30 silly mapToRegistry   scope: null,
+30 silly mapToRegistry   escapedName: 'dynasty',
+30 silly mapToRegistry   name: 'dynasty',
+30 silly mapToRegistry   rawSpec: '',
+30 silly mapToRegistry   spec: 'latest',
+30 silly mapToRegistry   type: 'tag' }
+31 silly mapToRegistry uri https://registry.npmjs.org/dynasty
+32 verbose publish registryBase https://registry.npmjs.org/
+33 silly publish uploading /home/srn/.npm/dynasty/0.2.5/package.tgz
+34 verbose stack Error: auth required for publishing
+34 verbose stack     at CachingRegistryClient.publish (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/publish.js:30:14)
+34 verbose stack     at /usr/local/lib/node_modules/npm/lib/publish.js:138:14
+34 verbose stack     at mapToRegistry (/usr/local/lib/node_modules/npm/lib/utils/map-to-registry.js:62:3)
+34 verbose stack     at publish_ (/usr/local/lib/node_modules/npm/lib/publish.js:107:3)
+34 verbose stack     at Array.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/slide/lib/bind-actor.js:15:8)
+34 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:15:14)
+34 verbose stack     at LOOP (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:14:28)
+34 verbose stack     at chain (/usr/local/lib/node_modules/npm/node_modules/slide/lib/chain.js:20:5)
+34 verbose stack     at /usr/local/lib/node_modules/npm/lib/publish.js:73:5
+34 verbose stack     at RES (/usr/local/lib/node_modules/npm/node_modules/inflight/inflight.js:23:14)
+35 verbose cwd /home/srn/development/dynasty/dynasty
+36 error Linux 3.19.0-66-generic
+37 error argv "/usr/bin/nodejs" "/usr/local/bin/npm" "publish"
+38 error node v4.4.7
+39 error npm  v3.10.5
+40 error code ENEEDAUTH
+41 error need auth auth required for publishing
+42 error need auth You need to authorize this machine using `npm adduser`
+43 verbose exit [ 1, true ]
